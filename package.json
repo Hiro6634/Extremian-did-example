@@ -14,5 +14,12 @@
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@extrimian/did-core": "^1.0.5",
+    "@extrimian/did-registry": "^1.0.8",
+    "@extrimian/did-resolver": "^1.0.2",
+    "@extrimian/kms-client": "^1.0.10",
+    "@extrimian/kms-core": "^1.0.5"
   }
 }
