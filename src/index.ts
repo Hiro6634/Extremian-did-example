@@ -2,6 +2,7 @@ import { KMSClient } from "@extrimian/kms-client";
 import { LANG, Suite } from "@extrimian/kms-core";
 import { SecureStorage } from "./secure-storage";
 import { Did } from "@extrimian/did-registry";
+import { DIDModenaResolver } from "@extrimian/did-resolver";
 import { AssertionMethodPurpose, KeyAgreementPurpose } from "@extrimian/did-core";
 
 const index = async () => {
@@ -45,6 +46,14 @@ const index = async () => {
         }]
     });
     
+    // RESOLVE
+    const resolver = new DIDModenaResolver({
+        modenaURL: "http://modena.extrimian.com"
+    });
+
+    const  didDocument = await resolver.resolveDID(longDID.didUniqueSuffix);
+
+    console.log(didDocument);
 }
 
 index();
