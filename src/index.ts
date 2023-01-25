@@ -23,18 +23,18 @@ const index = async () => {
     const didComm = await kms.create(Suite.DIDComm);
 
     // Generate BBS Key
-    const bbsbls = kms.create(Suite.Bbsbls2020);
+    const bbsbls = await kms.create(Suite.Bbsbls2020);
 
     const didService = new Did();
 
     // Create DID Document
-    const longDID = await didService.createDID({
+    const createDIDResponse = await didService.createDID({
         updateKeys: [updateKey.publicKeyJWK],
         recoveryKeys: [recoveryKey.publicKeyJWK],
         verificationMethods: [{
             //Claves DIDComm
             id: "didComm",
-            type: "X25519KeyAgreemenKey2019",
+            type: "X25519KeyAgreementKey2019",
             publicKeyJwk: didComm.publicKeyJWK,
             purpose: [new KeyAgreementPurpose()]
         }, {
@@ -51,9 +51,22 @@ const index = async () => {
         modenaURL: "http://modena.extrimian.com"
     });
 
-    const  didDocument = await resolver.resolveDID(longDID.didUniqueSuffix);
+    const  didDocument = await resolver.resolveDID(createDIDResponse.didUniqueSuffix);
 
     console.log(didDocument);
+
+    const publishResponse = await didService.publishDID({
+        createDIDResponse: createDIDResponse,
+        modenaApiURL: "http://modena.extrimian.com"
+    });
+
+    setTimeout(async ()=>{
+        const didDocument = await resolver.resolveDID(publishResponse.canonicalId)
+
+        console.log(didDocument);
+    }, 380000);
+
+
 }
 
 index();

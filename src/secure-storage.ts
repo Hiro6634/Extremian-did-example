@@ -8,7 +8,8 @@ export class SecureStorage implements KMSStorage{
     }
     
     async get(key: string): Promise<any> {
-        return this.map.get(key);
+        // return this.map.get(key);
+        return this.get(key);
     }
     async getAll(): Promise<Map<string, any>> {
         return this.map;
