@@ -1,0 +1,353 @@
+PS C:\Users\EduardoSuyama\Documents\Desarrollo\extrimian\Extremian-did-example> npm start
+
+> node-typescript-template@1.0.0 start
+> ts-node src/index.ts
+
+KMS didResolver not configured. You need set a didResolver to signVC
+STEP 1 - createDIDResponse
+{
+  recoveryKeys: [
+    {
+      kty: 'EC',
+      crv: 'secp256k1',
+      x: 'BZs43Zzeuk33aW-K5463p1swBRRG3cioMqMU-OyBEs8',
+      y: 'lFhnFa7bkDbOB1bv3lBvfyTOUME--QOiAuVhc9EkXEc'
+    }
+  ],
+  updateKeys: [
+    {
+      kty: 'EC',
+      crv: 'secp256k1',
+      x: '2fPjJ6Ekn6v2AekheL5iEYhj7Z8yKn5rvHb9Yyfk28U',
+      y: 'IqNwM-E6260FSV2HPdHLqBaU8S07roZklZdyO3TJMug'
+    }
+  ],
+  document: { publicKeys: [ [Object], [Object] ] },
+  longDid: 'did:ion:EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+  didUniqueSuffix: 'EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ'
+}
+STEP 2 - new Resolver DIDModenaResolver {
+  config: {
+    modenaURL: 'https://saas.extrimian.com/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK'
+  }
+}
+[AxiosError: Request failed with status code 503] {
+  code: 'ERR_BAD_RESPONSE',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function] },
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.27.2'
+    },
+    method: 'get',
+    url: 'https://saas.extrimian.com/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'saas.extrimian.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'saas.extrimian.com',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 121,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 60,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.27.2\r\n' +
+      'Host: saas.extrimian.com\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 503,
+      statusMessage: 'Service Unavailable',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://saas.extrimian.com/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 14,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'saas.extrimian.com',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://saas.extrimian.com/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kEndCalled)]: true,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 503,
+    statusText: 'Service Unavailable',
+    headers: {
+      'cache-control': 'no-store',
+      'content-length': '998',
+      'content-type': 'text/html',
+      'x-azure-externalerror': '0x80072f78,OriginInvalidResponse',
+      'x-azure-ref': '0ZMrTYwAAAABRiCIeKJtsSJ1UwqImskyrQlVFMzBFREdFMDIxMgA2ZmJmMzQ2MC0xZTM4LTQ4MGQtYTI2Yy01NGI2OGVhODc0ZDc=',
+      date: 'Fri, 27 Jan 2023 12:58:12 GMT',
+      connection: 'close'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'get',
+      url: 'https://saas.extrimian.com/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/0.27.2\r\n' +
+        'Host: saas.extrimian.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/didethrrsk0x091c2A966a2C1c73E0af36c7B929c8062A1830fA/QndHH7oqggOhsF74/modena-testnet?apikey=St6xioXuox2IsvT3co3KBu27SZTe6HjK/resolve/EiAdQLHVwjLEKQfIRhEFDv4G03bZjNcn0uBmdwW-otbgGQ:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnsicHVibGljS2V5cyI6W3siaWQiOiJkaWRDb21tIiwicHVibGljS2V5SndrIjp7ImNydiI6ImVkMjU1MTkiLCJrdHkiOiJFQyIsIngiOiI4Vkg1NFFEX3hBVm44SUdtbk1FUFZnIiwieSI6Ii1ONkZ5aVM5R2toMGlBYk1JWEd0U3cifSwicHVycG9zZXMiOlsia2V5QWdyZWVtZW50Il0sInR5cGUiOiJYMjU1MTlLZXlBZ3JlZW1lbnRLZXkyMDE5In0seyJpZCI6ImJic2JscyIsInB1YmxpY0tleUp3ayI6eyJjcnYiOiJCbHMxMjM4MUcyS2V5MjAyMCIsImt0eSI6IkVDIiwieCI6Im90dUQ4UWlDM1J3NW42aGJ3UEpsNV9LakpsT2sxV2dTTkVuSVA4bFpJeUszai0xYkRua3R6X05DQWlPaWRtekUiLCJ5IjoiRjRaZEM4Q1ZyZ1JtVEdWVElXMEQtWjh3U0RDOHRwd2xBZUNMWEl1M3hfNmFoTkJ2M3V6ZUM5NEI5blh0S2I0UCJ9LCJwdXJwb3NlcyI6WyJhc3NlcnRpb25NZXRob2QiXSwidHlwZSI6IkJsczEyMzgxRzFLZXkyMDIwIn1dfX1dLCJ1cGRhdGVDb21taXRtZW50IjpbIkVpRDJaZFdqTzRUZjJiTHlsSXRxSVliZEttSXJLd3B6RVZ1N0RPWDh3T2FHUmciXX0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlCUXBIQzExWWxSVjFZY0lwczlPUG9UX3Jxc1lCdTlxckREVEZFRGtHaDB5dyIsInJlY292ZXJ5Q29tbWl0bWVudCI6WyJFaURQMWI4X19QeUVKUWpaNUEtVkE5UWVkUjQ4Z0FEMGQyc20tVHB5eVdoSzB3Il19fQ',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'saas.extrimian.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kEndCalled)]: true,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'><head><meta content='text/html; charset=utf-8' http-equiv='content-type'/><style type='text/css'>body {font-family:Arial; margin-left:40px; }img  { border:0 none; }#content { margin-left: auto; margin-right: auto }#message h2 { font-size: 20px; font-weight: normal; color: #000000; margin: 34px 0px 0px 0px }#message p  { font-size: 13px; color: #000000; margin: 7px 0px 0px0px}#errorref { font-size: 11px; color: #737373; margin-top: 41px }</style><title>Service unavailable</title></head><body><div id='content'><div id='message'><h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p></div><div id='errorref'><span>0ZMrTYwAAAABRiCIeKJtsSJ1UwqImskyrQlVFMzBFREdFMDIxMgA2ZmJmMzQ2MC0xZTM4LTQ4MGQtYTI2Yy01NGI2OGVhODc0ZDc=</span></div></div></body></html>"
+  }
+}
+PS C:\Users\EduardoSuyama\Documents\Desarrollo\extrimian\Extremian-did-example>
+
+
+
+
+
+
+
+
+
+
+
+
+
